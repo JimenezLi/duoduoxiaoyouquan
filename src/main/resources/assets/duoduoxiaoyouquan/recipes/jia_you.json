@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R",
+    "O"
+  ],
+  "key": {
+    "R": {
+        "item": "minecraft:carpet",
+        "data": 14
+    },
+    "O": {"item": "duoduoxiaoyouquan:mo_tou"}
+  },
+  "result": {
+    "item": "duoduoxiaoyouquan:jia_you",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xOx",
+    "xxx"
+  ],
+  "key": {
+    "x": {"item": "minecraft:melon"},
+    "O": {"item": "duoduoxiaoyouquan:yunduoduo_core"}
+  },
+  "result": {
+    "item": "duoduoxiaoyouquan:chi_gua",
+    "count": 1
+  }
+}

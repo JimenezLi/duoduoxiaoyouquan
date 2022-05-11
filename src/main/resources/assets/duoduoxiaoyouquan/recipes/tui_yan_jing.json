@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "zzz",
+    "xOx",
+    "zzz"
+  ],
+  "key": {
+    "z": {
+        "type": "forge:ore_dict",
+        "ore": "ingotIron"
+    },
+    "x": {"item": "minecraft:glass_pane"},
+    "O": {"item": "duoduoxiaoyouquan:yunduoduo_core"}
+  },
+  "result": {
+    "item": "duoduoxiaoyouquan:tui_yan_jing",
+    "count": 1
+  }
+}

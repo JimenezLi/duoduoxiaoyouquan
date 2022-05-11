@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xOx",
+    "xxx"
+  ],
+  "key": {
+    "x": {"item": "minecraft:speckled_melon"},
+    "O": {"item": "duoduoxiaoyouquan:shang_xin"}
+  },
+  "result": {
+    "item": "duoduoxiaoyouquan:mo_tou",
+    "count": 1
+  }
+}

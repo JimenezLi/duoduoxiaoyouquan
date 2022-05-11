@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xOx",
+    "xxx"
+  ],
+  "key": {
+    "x": {"item": "minecraft:tnt"},
+    "O": {"item": "duoduoxiaoyouquan:yunduoduo_core"}
+  },
+  "result": {
+    "item": "duoduoxiaoyouquan:fen",
+    "count": 1
+  }
+}

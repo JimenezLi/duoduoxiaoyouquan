@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xOx",
+    "xWx"
+  ],
+  "key": {
+    "x": {
+        "item": "minecraft:dye",
+        "data": 1
+    },
+    "W": {"item": "minecraft:water_bucket"},
+    "O": {"item": "duoduoxiaoyouquan:yunduoduo_core"}
+  },
+  "result": {
+    "item": "duoduoxiaoyouquan:tu_xie",
+    "count": 1
+  }
+}

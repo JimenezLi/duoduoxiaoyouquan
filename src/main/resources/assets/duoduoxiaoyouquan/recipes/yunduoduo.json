@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "duoduoxiaoyouquan:yunduoduo_core"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "result": {
+    "item": "duoduoxiaoyouquan:yunduoduo",
+    "count": 1
+  }
+}

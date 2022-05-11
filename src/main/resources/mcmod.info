@@ -1,0 +1,16 @@
+[
+{
+  "modid": "duoduoxiaoyouquan",
+  "name": "Duoduo Expressions",
+  "description": "Duoduo expressions.",
+  "version": "1.0.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Jimenez Li"],
+  "credits": "The Forge and FML guys, for making this example; also squid233's mod tutorial at https://mc1122modtutorialdocs-sphinx.readthedocs.io/",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

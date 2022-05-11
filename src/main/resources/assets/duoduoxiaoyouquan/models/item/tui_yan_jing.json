@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "duoduoxiaoyouquan:items/tui_yan_jing"
+  }
+}

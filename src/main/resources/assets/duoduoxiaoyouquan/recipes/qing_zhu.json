@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "duoduoxiaoyouquan:kai_xin"},
+    {"item": "minecraft:fireworks"}
+  ],
+  "result": {
+    "item": "duoduoxiaoyouquan:qing_zhu",
+    "count": 1
+  }
+}

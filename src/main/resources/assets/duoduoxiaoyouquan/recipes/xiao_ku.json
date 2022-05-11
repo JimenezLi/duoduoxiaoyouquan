@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "wxw",
+    "xOx",
+    "wxw"
+  ],
+  "key": {
+    "w": {"item": "minecraft:water_bucket"},
+    "x": {"item": "minecraft:speckled_melon"},
+    "O": {"item": "duoduoxiaoyouquan:yunduoduo_core"}
+  },
+  "result": {
+    "item": "duoduoxiaoyouquan:xiao_ku",
+    "count": 1
+  }
+}
