@@ -17,7 +17,7 @@ public class ItemsRegister {
     public static final ItemYunDuoDuoCore yunduoduo_core = new ItemYunDuoDuoCore();
 
     public static final ItemBaiYan bai_yan = new ItemBaiYan();
-    public static final ItemChiGua chi_gua = new ItemChiGua();
+    public static final ItemChiGua chi_gua = new ItemChiGua(20, 20.0f, false);
     public static final ItemCiYa ci_ya = new ItemCiYa();
     public static final ItemDianZan dian_zan = new ItemDianZan();
     public static final ItemFen fen = new ItemFen();
@@ -48,6 +48,10 @@ public class ItemsRegister {
     public static final ItemXiaoKu xiao_ku = new ItemXiaoKu();
     public static final ItemYiWen yi_wen = new ItemYiWen();
 
+    public static Item[] expressionList = {
+            bai_yan, chi_gua, ci_ya, dian_zan, fen, fen_nu, gan_ga, gou_tou, heng, he_kuo_luo, hua_ji, jia_you, jing_dai, kai_xin, ke_lian, ma_le, mei_yan_kan, mo_tou, qing_zhu, qin_qin, qi_fu, ren_pin, san_hua, shang_xin, tan_qi, tou_tu, tui_yan_jing, tu_xie, xiao_chou, xiao_ku, yi_wen
+    };
+
     public ItemsRegister() {
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -57,8 +61,11 @@ public class ItemsRegister {
         event.getRegistry().register(ironPlate);
         event.getRegistry().register(yunduoduo_core);
         event.getRegistry().register(yunduoduo);
-        event.getRegistry().registerAll(
-                bai_yan, chi_gua, ci_ya, dian_zan, fen, fen_nu, gan_ga, gou_tou, heng, he_kuo_luo, hua_ji, jia_you, jing_dai, kai_xin, ke_lian, ma_le, mei_yan_kan, mo_tou, qing_zhu, qin_qin, qi_fu, ren_pin, san_hua, shang_xin, tan_qi, tou_tu, tui_yan_jing, tu_xie, xiao_chou, xiao_ku, yi_wen
-        );
+//        event.getRegistry().registerAll(
+//                bai_yan, chi_gua, ci_ya, dian_zan, fen, fen_nu, gan_ga, gou_tou, heng, he_kuo_luo, hua_ji, jia_you, jing_dai, kai_xin, ke_lian, ma_le, mei_yan_kan, mo_tou, qing_zhu, qin_qin, qi_fu, ren_pin, san_hua, shang_xin, tan_qi, tou_tu, tui_yan_jing, tu_xie, xiao_chou, xiao_ku, yi_wen
+//        );
+        for (Item expression: expressionList){
+            event.getRegistry().register(expression);
+        }
     }
 }
