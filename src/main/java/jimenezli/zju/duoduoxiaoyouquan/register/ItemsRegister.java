@@ -17,7 +17,7 @@ public class ItemsRegister {
     public static final ItemYunDuoDuoCore yunduoduo_core = new ItemYunDuoDuoCore();
 
     public static final ItemBaiYan bai_yan = new ItemBaiYan();
-    public static final ItemChiGua chi_gua = new ItemChiGua(20, 20.0f, false);
+    public static final ItemChiGua chi_gua = new ItemChiGua(20, 1.0F, false);
     public static final ItemCiYa ci_ya = new ItemCiYa();
     public static final ItemDianZan dian_zan = new ItemDianZan();
     public static final ItemFen fen = new ItemFen();
