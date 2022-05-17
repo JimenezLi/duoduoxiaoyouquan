@@ -12,10 +12,10 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
 public class ItemChiGua extends ItemFood {
-    private static String name = "chi_gua";
     public ItemChiGua(int hungerHeal, float saturation, boolean isWolfFood){
         super(hungerHeal, saturation, isWolfFood);
 
+        String name = "chi_gua";
         this.setRegistryName(Reference.MODID + ":" + name);
         this.setUnlocalizedName(Reference.MODID + "." + name);
         this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
