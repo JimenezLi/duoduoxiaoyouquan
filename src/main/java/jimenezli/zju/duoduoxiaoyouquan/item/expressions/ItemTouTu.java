@@ -5,6 +5,7 @@ import jimenezli.zju.duoduoxiaoyouquan.duoduoxiaoyouquan;
 import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
@@ -40,9 +41,9 @@ public class ItemTouTu extends Item {
         if (seed < 0.1) {
             itemstack = new ItemStack(Blocks.WEB);                  //minecraft:web
         } else if (seed >= 0.9) {
-            itemstack = new ItemStack(Item.getItemById(420));       //minecraft:lead
+            itemstack = new ItemStack(Items.LEAD);                  //minecraft:lead
         } else {
-            itemstack = new ItemStack(Item.getItemById(287));       //minecraft:string
+            itemstack = new ItemStack(Items.STRING);                //minecraft:string
         }
 
         ItemStack tou_tu = playerIn.getHeldItem(handIn);

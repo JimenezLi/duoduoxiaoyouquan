@@ -7,6 +7,7 @@ import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
@@ -42,11 +43,11 @@ public class ItemQiFu extends Item {
             if (seed < 0.4) {
                 worldIn.spawnEntity(new EntityTNTPrimed(worldIn, playerIn.posX, playerIn.posY, playerIn.posZ, playerIn));
             } else if (seed < 0.9) {
-                playerIn.dropItem(new ItemStack(Item.getItemById(322), 1, 0), false);  //golden_apple
+                playerIn.dropItem(new ItemStack(Items.GOLDEN_APPLE, 1, 0), false);  //golden_apple
             } else if (seed < 0.99) {
-                playerIn.dropItem(new ItemStack(Item.getItemById(450)), false);  //shulker_shell
+                playerIn.dropItem(new ItemStack(Items.SHULKER_SHELL), false);  //shulker_shell
             } else {
-                playerIn.dropItem(new ItemStack(Item.getItemById(322), 1, 1), false);  //golden_apple(enchanted)
+                playerIn.dropItem(new ItemStack(Items.GOLDEN_APPLE, 1, 1), false);  //golden_apple(enchanted)
             }
         }
         playerIn.addStat(Objects.requireNonNull(StatList.getObjectUseStats(this)));
