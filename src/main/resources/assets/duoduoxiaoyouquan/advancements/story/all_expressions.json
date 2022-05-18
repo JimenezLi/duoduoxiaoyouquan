@@ -1,0 +1,206 @@
+{
+  "display": {
+    "icon": {
+      "item": "duoduoxiaoyouquan:hua_ji"
+    },
+    "title": {
+      "translate": "advancements.story.all_expressions.title"
+    },
+    "description": {
+      "translate": "advancements.story.all_expressions.description"
+    },
+    "frame": "challenge"
+  },
+  "parent": "duoduoxiaoyouquan:story/first_expression",
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "bai_yan": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:bai_yan"}]
+      }
+    },
+    "chi_gua": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:chi_gua"}]
+      }
+    },
+    "ci_ya": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:ci_ya"}]
+      }
+    },
+    "dian_zan": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:dian_zan"}]
+      }
+    },
+    "fen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:fen"}]
+      }
+    },
+    "fen_nu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:fen_nu"}]
+      }
+    },
+    "gan_ga": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:gan_ga"}]
+      }
+    },
+    "gou_tou": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:gou_tou"}]
+      }
+    },
+    "heng": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:heng"}]
+      }
+    },
+    "he_kuo_luo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:he_kuo_luo"}]
+      }
+    },
+    "hua_ji": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:hua_ji"}]
+      }
+    },
+    "jia_you": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:jia_you"}]
+      }
+    },
+    "jing_dai": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:jing_dai"}]
+      }
+    },
+    "kai_xin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:kai_xin"}]
+      }
+    },
+    "ke_lian": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:ke_lian"}]
+      }
+    },
+    "ma_le": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:ma_le"}]
+      }
+    },
+    "mei_yan_kan": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:mei_yan_kan"}]
+      }
+    },
+    "mo_tou": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:mo_tou"}]
+      }
+    },
+    "qing_zhu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:qing_zhu"}]
+      }
+    },
+    "qin_qin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:qin_qin"}]
+      }
+    },
+    "qi_fu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:qi_fu"}]
+      }
+    },
+    "ren_pin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:ren_pin"}]
+      }
+    },
+    "san_hua": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:san_hua"}]
+      }
+    },
+    "shang_xin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:shang_xin"}]
+      }
+    },
+    "tan_qi": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:tan_qi"}]
+      }
+    },
+    "tou_tu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:tou_tu"}]
+      }
+    },
+    "tui_yan_jing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:tui_yan_jing"}]
+      }
+    },
+    "tu_xie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:tu_xie"}]
+      }
+    },
+    "xiao_chou": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:xiao_chou"}]
+      }
+    },
+    "xiao_ku": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:xiao_ku"}]
+      }
+    },
+    "yi_wen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"item": "duoduoxiaoyouquan:yi_wen"}]
+      }
+    }
+  }
+}

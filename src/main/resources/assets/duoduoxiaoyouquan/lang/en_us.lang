@@ -6,6 +6,11 @@ item.duoduoxiaoyouquan.iron_plate.name=Iron Plate
 item.duoduoxiaoyouquan.yunduoduo_core.name=YunDuoDuo Core
 item.duoduoxiaoyouquan.yunduoduo.name=YunDuoDuo
 
+advancements.story.first_expression.title=First Expression
+advancements.story.first_expression.description=Make one yunduoduo core
+advancements.story.all_expressions.title=First Expression
+advancements.story.all_expressions.description=Make one yunduoduo core
+
 item.duoduoxiaoyouquan.bai_yan.name=Bai Yan
 item.duoduoxiaoyouquan.chi_gua.name=Chi Gua
 item.duoduoxiaoyouquan.ci_ya.name=Ci Ya

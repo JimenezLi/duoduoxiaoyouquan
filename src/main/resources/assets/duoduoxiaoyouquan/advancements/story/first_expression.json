@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "duoduoxiaoyouquan:yunduoduo_core"
+    },
+    "title": {
+      "translate": "advancements.story.first_expression.title"
+    },
+    "description": {
+      "translate": "advancements.story.first_expression.description"
+    }
+  },
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "yunduoduo_core": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "duoduoxiaoyouquan:yunduoduo_core"
+          }
+        ]
+      }
+    }
+  }
+}
