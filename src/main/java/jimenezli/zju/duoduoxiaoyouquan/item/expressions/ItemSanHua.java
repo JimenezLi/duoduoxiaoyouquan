@@ -33,7 +33,9 @@ public class ItemSanHua extends Item {
     {
         Random random = new Random();
         ItemStack san_hua = playerIn.getHeldItem(handIn);
-        san_hua.shrink(1);
+        if (!playerIn.capabilities.isCreativeMode) {
+            san_hua.shrink(1);
+        }
 
         //The same as code of ItemGouTou
         for (int ocelotCount = 0; ocelotCount < 8; ocelotCount++) {

@@ -60,7 +60,9 @@ public class ItemXiaoKu extends Item {
         PotionEffect badEffect = badEffects.get(random.nextInt(badEffectNumber));
 
         ItemStack xiao_ku = playerIn.getHeldItem(handIn);
-        xiao_ku.shrink(1);
+        if (!playerIn.capabilities.isCreativeMode) {
+            xiao_ku.shrink(1);
+        }
 
         //Copied from code of ItemJingDai
         if (!worldIn.isRemote) {

@@ -33,7 +33,9 @@ public class ItemJingDai extends Item {
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack jing_dai = playerIn.getHeldItem(handIn);
-        jing_dai.shrink(1);
+        if (!playerIn.capabilities.isCreativeMode) {
+            jing_dai.shrink(1);
+        }
 
         //Copied from code of ItemTouTu
         for (double lightningDistance = 5.0; lightningDistance < 8.0; lightningDistance += 1.0) {

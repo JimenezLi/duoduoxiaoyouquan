@@ -35,7 +35,9 @@ public class ItemQiFu extends Item {
     {
         double seed = random.nextDouble();
         ItemStack qi_fu = playerIn.getHeldItem(handIn);
-        qi_fu.shrink(1);
+        if (!playerIn.capabilities.isCreativeMode) {
+            qi_fu.shrink(1);
+        }
 
         //Copied from code of ItemTouTu
         //40% TNT, 50% golden_apple, 9% shulker_shell, 1% golden_apple(enchanted)

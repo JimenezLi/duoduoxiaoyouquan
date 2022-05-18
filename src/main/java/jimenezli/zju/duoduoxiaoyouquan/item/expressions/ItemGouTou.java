@@ -31,7 +31,9 @@ public class ItemGouTou extends Item {
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack gou_tou = playerIn.getHeldItem(handIn);
-        gou_tou.shrink(1);
+        if (!playerIn.capabilities.isCreativeMode) {
+            gou_tou.shrink(1);
+        }
 
         //Copied from code of ItemJingDai
         for (int wolfCount = 0; wolfCount < 8; wolfCount++) {
