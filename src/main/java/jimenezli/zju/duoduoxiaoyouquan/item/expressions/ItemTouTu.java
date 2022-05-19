@@ -60,7 +60,9 @@ public class ItemTouTu extends Item {
                 playerIn.dropItem(itemstack, false);
             }
 
-            tou_tu.damageItem(1, playerIn);
+            if (!playerIn.capabilities.isCreativeMode) {
+                tou_tu.damageItem(1, playerIn);
+            }
             playerIn.addStat(Objects.requireNonNull(StatList.getObjectUseStats(this)));
             return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, tou_tu);
         }

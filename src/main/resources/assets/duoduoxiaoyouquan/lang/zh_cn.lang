@@ -6,6 +6,11 @@ item.duoduoxiaoyouquan.iron_plate.name=铁板
 item.duoduoxiaoyouquan.yunduoduo_core.name=云朵朵核心
 item.duoduoxiaoyouquan.yunduoduo.name=云朵朵
 
+advancements.story.first_expression.title=朵朵表情包
+advancements.story.first_expression.description=合成一个云朵朵核心
+advancements.story.all_expressions.title=表情包大师
+advancements.story.all_expressions.description=获得所有朵朵表情包
+
 item.duoduoxiaoyouquan.bai_yan.name=白眼
 item.duoduoxiaoyouquan.chi_gua.name=吃瓜
 item.duoduoxiaoyouquan.ci_ya.name=呲牙
