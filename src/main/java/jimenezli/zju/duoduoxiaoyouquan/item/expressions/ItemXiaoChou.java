@@ -5,8 +5,8 @@ import jimenezli.zju.duoduoxiaoyouquan.duoduoxiaoyouquan;
 import net.minecraft.item.Item;
 
 public class ItemXiaoChou extends Item {
-    private static String name = "xiao_chou";
     public ItemXiaoChou(){
+        String name = "xiao_chou";
         this.setRegistryName(Reference.MODID + ":" + name);
         this.setUnlocalizedName(Reference.MODID + "." + name);
         this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
