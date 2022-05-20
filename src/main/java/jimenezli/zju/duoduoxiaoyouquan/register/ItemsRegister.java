@@ -25,7 +25,7 @@ public class ItemsRegister {
     public static final ItemGanGa gan_ga = new ItemGanGa();
     public static final ItemGouTou gou_tou = new ItemGouTou();
     public static final ItemHeng heng = new ItemHeng();
-    public static final ItemHeKuoLuo he_kuo_luo = new ItemHeKuoLuo();
+    public static final ItemHeKuoLuo he_kuo_luo = new ItemHeKuoLuo(6, 0.2F, false);
     public static final ItemHuaJi hua_ji = new ItemHuaJi();
     public static final ItemJiaYou jia_you = new ItemJiaYou();
     public static final ItemJingDai jing_dai = new ItemJingDai();
