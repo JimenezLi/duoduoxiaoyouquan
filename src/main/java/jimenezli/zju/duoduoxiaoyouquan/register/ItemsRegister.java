@@ -6,12 +6,17 @@ import jimenezli.zju.duoduoxiaoyouquan.item.ItemYunDuoDuoCore;
 import jimenezli.zju.duoduoxiaoyouquan.item.expressions.*;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber
 public class ItemsRegister {
+    //Learnt from code of Twilight Forest
+    public static Item.ToolMaterial DUODUOXIAOYOUQUAN_TU_XIE = EnumHelper.addToolMaterial("DUODUOXIAOYOUQUAN_TU_XIE", 0, 1, 1.0F, 1000.0F, 1);
+
+
     public static final ItemIronPlate ironPlate = new ItemIronPlate();
     public static final ItemYunDuoDuo yunduoduo = new ItemYunDuoDuo();
     public static final ItemYunDuoDuoCore yunduoduo_core = new ItemYunDuoDuoCore();
@@ -43,7 +48,7 @@ public class ItemsRegister {
     public static final ItemTanQi tan_qi = new ItemTanQi();
     public static final ItemTouTu tou_tu = new ItemTouTu();
     public static final ItemTuiYanJing tui_yan_jing = new ItemTuiYanJing();
-    public static final ItemTuXie tu_xie = new ItemTuXie();
+    public static final ItemTuXie tu_xie = new ItemTuXie(DUODUOXIAOYOUQUAN_TU_XIE);
     public static final ItemXiaoChou xiao_chou = new ItemXiaoChou();
     public static final ItemXiaoKu xiao_ku = new ItemXiaoKu();
     public static final ItemYiWen yi_wen = new ItemYiWen();

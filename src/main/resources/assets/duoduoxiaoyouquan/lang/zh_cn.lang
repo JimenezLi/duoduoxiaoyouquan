@@ -11,6 +11,8 @@ advancements.story.first_expression.description=合成一个云朵朵核心
 advancements.story.all_expressions.title=表情包大师
 advancements.story.all_expressions.description=获得所有朵朵表情包
 
+death.attack.tu_xie=%1$s吐血而亡
+
 item.duoduoxiaoyouquan.bai_yan.name=白眼
 item.duoduoxiaoyouquan.chi_gua.name=吃瓜
 item.duoduoxiaoyouquan.ci_ya.name=呲牙
@@ -41,4 +43,4 @@ item.duoduoxiaoyouquan.tui_yan_jing.name=推眼镜
 item.duoduoxiaoyouquan.tu_xie.name=吐血
 item.duoduoxiaoyouquan.xiao_chou.name=小丑
 item.duoduoxiaoyouquan.xiao_ku.name=笑哭
-item.duoduoxiaoyouquan.yi_wen.name=疑问
+item.duoduoxiaoyouquan.yi_wen.name=疑问death.attack.tu_xie=%1$s died of hematemesis
