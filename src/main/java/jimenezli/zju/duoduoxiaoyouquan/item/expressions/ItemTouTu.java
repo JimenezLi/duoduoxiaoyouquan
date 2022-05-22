@@ -19,8 +19,8 @@ import java.util.Objects;
 import java.util.Random;
 
 public class ItemTouTu extends Item {
-    private static String name = "tou_tu";
     public ItemTouTu(){
+        String name = "tou_tu";
         this.setRegistryName(Reference.MODID + ":" + name);
         this.setUnlocalizedName(Reference.MODID + "." + name);
         this.setCreativeTab(duoduoxiaoyouquan.DUODUO);

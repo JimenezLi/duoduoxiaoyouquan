@@ -3,8 +3,13 @@ package jimenezli.zju.duoduoxiaoyouquan.item.expressions;
 import ibxm.Player;
 import jimenezli.zju.duoduoxiaoyouquan.Reference;
 import jimenezli.zju.duoduoxiaoyouquan.duoduoxiaoyouquan;
+import jimenezli.zju.duoduoxiaoyouquan.item.ItemIronPlate;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.monster.EntityCreeper;
+import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -13,6 +18,7 @@ import net.minecraft.stats.StatList;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.datafix.fixes.PotionItems;
 import net.minecraft.world.World;
 
@@ -72,5 +78,26 @@ public class ItemXiaoKu extends Item {
 
         playerIn.addStat(Objects.requireNonNull(StatList.getObjectUseStats(this)));
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, xiao_ku);
+    }
+
+    public boolean itemInteractionForEntity(ItemStack stack, EntityPlayer playerIn, EntityLivingBase target, EnumHand hand)
+    {
+        if (target instanceof EntityCreeper) {
+            EntityCreeper creeper = (EntityCreeper) target;
+            if (creeper.getPowered()) {
+                ItemStack itemstack = new ItemStack(Objects.requireNonNull(Item.REGISTRY.getObject(new ResourceLocation("duoduoxiaoyouquan:charged_xiao_ku"))));
+                if (!playerIn.inventory.addItemStackToInventory(itemstack.copy()))
+                {
+                    playerIn.dropItem(itemstack, false);
+                }
+
+                if (!playerIn.capabilities.isCreativeMode) {
+                    stack.shrink(1);
+                }
+                playerIn.addStat(Objects.requireNonNull(StatList.getObjectUseStats(this)));
+                return true;
+            }
+        }
+        return false;
     }
 }
