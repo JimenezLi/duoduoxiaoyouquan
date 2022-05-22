@@ -49,6 +49,8 @@ public class ModelsRegister {
         registerModel(ItemsRegister.xiao_chou);
         registerModel(ItemsRegister.xiao_ku);
         registerModel(ItemsRegister.yi_wen);
+
+        registerModel(ItemsRegister.charged_xiao_ku);
     }
 
     private void registerModel(Item item) {

@@ -10,6 +10,8 @@ advancements.story.first_expression.title=First Expression
 advancements.story.first_expression.description=Make one yunduoduo core
 advancements.story.all_expressions.title=First Expression
 advancements.story.all_expressions.description=Make one yunduoduo core
+advancements.story.charged_xiao_ku.title=Blinking
+advancements.story.charged_xiao_ku.description=Right click with xiao_ku at a charged creeper to get it charged
 
 death.attack.tu_xie=%1$s died of hematemesis
 death.attack.ren_pin=%1$s died to money
@@ -45,5 +47,7 @@ item.duoduoxiaoyouquan.tu_xie.name=Tu Xie
 item.duoduoxiaoyouquan.xiao_chou.name=Xiao Chou
 item.duoduoxiaoyouquan.xiao_ku.name=Xiao Ku
 item.duoduoxiaoyouquan.yi_wen.name=Yi Wen
+
+item.duoduoxiaoyouquan.charged_xiao_ku.name=Charged Xiao Ku
 
 item.duoduoxiaoyouquan.mei_yan_kan.lover_name=Girlfriend

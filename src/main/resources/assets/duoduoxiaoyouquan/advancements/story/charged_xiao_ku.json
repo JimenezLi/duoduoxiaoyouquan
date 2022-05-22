@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "duoduoxiaoyouquan:charged_xiao_ku"
+    },
+    "title": {
+      "translate": "advancements.story.charged_xiao_ku.title"
+    },
+    "description": {
+      "translate": "advancements.story.charged_xiao_ku.description"
+    },
+    "frame": "challenge",
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "duoduoxiaoyouquan:story/first_expression",
+  "criteria": {
+    "charged_xiao_ku": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "duoduoxiaoyouquan:charged_xiao_ku"
+          }
+        ]
+      }
+    }
+  }
+}

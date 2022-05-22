@@ -4,6 +4,7 @@ import jimenezli.zju.duoduoxiaoyouquan.item.ItemIronPlate;
 import jimenezli.zju.duoduoxiaoyouquan.item.ItemYunDuoDuo;
 import jimenezli.zju.duoduoxiaoyouquan.item.ItemYunDuoDuoCore;
 import jimenezli.zju.duoduoxiaoyouquan.item.expressions.*;
+import jimenezli.zju.duoduoxiaoyouquan.item.hidden.ItemChargedXiaoKu;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.EnumHelper;
@@ -53,6 +54,8 @@ public class ItemsRegister {
     public static final ItemXiaoKu xiao_ku = new ItemXiaoKu();
     public static final ItemYiWen yi_wen = new ItemYiWen();
 
+    public static final ItemChargedXiaoKu charged_xiao_ku = new ItemChargedXiaoKu();
+
     public static Item[] expressionList = {
             bai_yan, chi_gua, ci_ya, dian_zan, fen, fen_nu, gan_ga, gou_tou, heng, he_kuo_luo, hua_ji, jia_you, jing_dai, kai_xin, ke_lian, ma_le, mei_yan_kan, mo_tou, qing_zhu, qin_qin, qi_fu, ren_pin, san_hua, shang_xin, tan_qi, tou_tu, tui_yan_jing, tu_xie, xiao_chou, xiao_ku, yi_wen
     };
@@ -72,5 +75,7 @@ public class ItemsRegister {
         for (Item expression: expressionList){
             event.getRegistry().register(expression);
         }
+
+        event.getRegistry().register(charged_xiao_ku);
     }
 }
