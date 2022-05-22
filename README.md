@@ -1,5 +1,5 @@
 # Minecraft mod: 朵朵校友圈
-> mod版本：0.4.0
+> mod版本：0.5.0
 > 
 > 适用的Minecraft版本：1.12.2
 
