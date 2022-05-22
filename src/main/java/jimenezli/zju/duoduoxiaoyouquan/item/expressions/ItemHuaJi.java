@@ -44,7 +44,7 @@ public class ItemHuaJi extends Item {
         //Copied from ItemMonsterPlacer
         BlockPos blockpos = pos.offset(facing);
         double posX = (double)blockpos.getX() + 0.5D;
-        double posY = (double)blockpos.getY() + 1.0D;
+        double posY = (double)blockpos.getY();
         double posZ = (double)blockpos.getZ() + 0.5D;
 
         EntityParrot parrot = new EntityParrot(worldIn);
