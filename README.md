@@ -5,5 +5,6 @@
 
 这个mod的主要功能是把朵朵表情包导入到minecraft中。
 
+- [更新信息](./changelog.md)
 - [各表情包的功能](./tutorial/Expressions.md)
 - [致谢](./Acknowledgement.md)
