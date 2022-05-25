@@ -17,8 +17,8 @@ import javax.annotation.Nonnull;
 import java.util.Objects;
 
 public class ItemFen extends Item {
-    private static String name = "fen";
     public ItemFen(){
+        String name = "fen";
         this.setRegistryName(Reference.MODID + ":" + name);
         this.setUnlocalizedName(Reference.MODID + "." + name);
         this.setCreativeTab(duoduoxiaoyouquan.DUODUO);

@@ -31,9 +31,9 @@ public class ItemJiaYou extends Item {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
-        ItemStack xiao_ku = playerIn.getHeldItem(handIn);
+        ItemStack jia_you = playerIn.getHeldItem(handIn);
         if (!playerIn.capabilities.isCreativeMode) {
-            xiao_ku.shrink(1);
+            jia_you.shrink(1);
         }
 
         if (!worldIn.isRemote) {
@@ -43,6 +43,6 @@ public class ItemJiaYou extends Item {
         }
 
         playerIn.addStat(Objects.requireNonNull(StatList.getObjectUseStats(this)));
-        return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, xiao_ku);
+        return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, jia_you);
     }
 }
