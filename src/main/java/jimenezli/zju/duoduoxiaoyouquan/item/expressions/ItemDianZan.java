@@ -37,10 +37,12 @@ public class ItemDianZan extends Item {
             dian_zan.damageItem(1, playerIn);
         }
 
+        DamageSource source = new DamageSource("dian_zan");
+
         for (Entity entity: worldIn.loadedEntityList) {
             if (entity instanceof EntityLivingBase && !entity.equals(playerIn)) {
                 if (entity.getDistance(playerIn) < 10.0F) {
-                    entity.attackEntityFrom(DamageSource.GENERIC, 1.0F);
+                    entity.attackEntityFrom(source, 1.0F);
                 }
             }
         }
