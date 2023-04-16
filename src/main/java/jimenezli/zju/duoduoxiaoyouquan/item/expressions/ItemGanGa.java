@@ -19,11 +19,7 @@ import javax.annotation.Nonnull;
 import java.util.Objects;
 
 public class ItemGanGa extends Item {
-    private static String name = "gan_ga";
     public ItemGanGa(){
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

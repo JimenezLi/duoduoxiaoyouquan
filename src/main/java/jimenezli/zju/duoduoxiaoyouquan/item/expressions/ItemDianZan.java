@@ -20,10 +20,6 @@ import java.util.Objects;
 
 public class ItemDianZan extends Item {
     public ItemDianZan(){
-        String name = "dian_zan";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
         this.setMaxDamage(256);
         this.setMaxStackSize(1);
     }

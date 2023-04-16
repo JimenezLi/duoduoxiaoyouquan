@@ -19,10 +19,6 @@ import java.util.Objects;
 
 public class ItemJingDai extends Item {
     public ItemJingDai(){
-        String name = "jing_dai";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
 

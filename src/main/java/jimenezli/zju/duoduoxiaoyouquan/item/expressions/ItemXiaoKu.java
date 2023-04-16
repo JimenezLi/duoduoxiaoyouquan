@@ -1,15 +1,10 @@
 package jimenezli.zju.duoduoxiaoyouquan.item.expressions;
 
-import ibxm.Player;
 import jimenezli.zju.duoduoxiaoyouquan.Reference;
 import jimenezli.zju.duoduoxiaoyouquan.duoduoxiaoyouquan;
-import jimenezli.zju.duoduoxiaoyouquan.item.ItemIronPlate;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityCreeper;
-import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
-import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -19,7 +14,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.datafix.fixes.PotionItems;
 import net.minecraft.world.World;
 
 import javax.annotation.Nonnull;
@@ -29,10 +23,6 @@ import java.util.Vector;
 
 public class ItemXiaoKu extends Item {
     public ItemXiaoKu(){
-        String name = "xiao_ku";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     //Bad in efficiency

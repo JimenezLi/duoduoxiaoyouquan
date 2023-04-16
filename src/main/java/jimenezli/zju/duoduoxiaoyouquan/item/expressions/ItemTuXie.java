@@ -15,11 +15,6 @@ public class ItemTuXie extends ItemSword {
     public static final DamageSource DEATH_TU_XIE = new DamageSource("tu_xie").setDamageBypassesArmor();
     public ItemTuXie(Item.ToolMaterial material){
         super(material);
-
-        String name = "tu_xie";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Override

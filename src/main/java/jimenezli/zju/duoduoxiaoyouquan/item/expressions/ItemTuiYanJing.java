@@ -18,10 +18,6 @@ import java.util.Objects;
 
 public class ItemTuiYanJing extends Item {
     public ItemTuiYanJing(){
-        String name = "tui_yan_jing";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

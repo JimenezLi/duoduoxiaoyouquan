@@ -18,12 +18,6 @@ import java.util.Vector;
 public class ItemHeKuoLuo extends ItemFood {
     public ItemHeKuoLuo(int hungerHeal, float saturation, boolean isWolfFood) {
         super(hungerHeal, saturation, isWolfFood);
-
-        String name = "he_kuo_luo";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
-
         this.setAlwaysEdible();
     }
 

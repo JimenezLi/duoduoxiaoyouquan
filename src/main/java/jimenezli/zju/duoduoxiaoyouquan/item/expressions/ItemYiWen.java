@@ -19,10 +19,6 @@ import java.util.Objects;
 
 public class ItemYiWen extends Item {
     public ItemYiWen(){
-        String name = "yi_wen";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     private static final double angleAddition = Math.PI / 4.0;

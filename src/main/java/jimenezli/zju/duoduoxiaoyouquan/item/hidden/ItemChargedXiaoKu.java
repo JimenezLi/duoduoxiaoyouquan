@@ -19,10 +19,6 @@ import java.util.Vector;
 
 public class ItemChargedXiaoKu extends Item {
     public ItemChargedXiaoKu() {
-        String name = "charged_xiao_ku";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     //Bad in efficiency
@@ -33,7 +29,6 @@ public class ItemChargedXiaoKu extends Item {
 
         for (int potionID = 1; potionID <= 27; potionID++) {
             Potion potion = Objects.requireNonNull(Potion.getPotionById(potionID));
-            boolean isBadEffect = potion.isBadEffect();
             PotionEffect effect;
             if (potionID == 6 || potionID == 7) {       // Instant health and damage
                 effect = new PotionEffect(potion);

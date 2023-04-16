@@ -18,10 +18,6 @@ import java.util.Objects;
 
 public class ItemQinQin extends Item {
     public ItemQinQin(){
-        String name = "qin_qin";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

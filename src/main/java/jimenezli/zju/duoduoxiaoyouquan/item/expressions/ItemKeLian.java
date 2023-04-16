@@ -20,10 +20,6 @@ import java.util.Objects;
 
 public class ItemKeLian extends Item {
     public ItemKeLian(){
-        String name = "ke_lian";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

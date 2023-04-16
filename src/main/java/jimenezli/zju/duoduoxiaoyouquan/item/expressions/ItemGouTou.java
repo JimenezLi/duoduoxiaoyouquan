@@ -18,10 +18,6 @@ import java.util.Objects;
 
 public class ItemGouTou extends Item {
     public ItemGouTou(){
-        String name = "gou_tou";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     private static final double angleAddition = Math.PI / 4.0;

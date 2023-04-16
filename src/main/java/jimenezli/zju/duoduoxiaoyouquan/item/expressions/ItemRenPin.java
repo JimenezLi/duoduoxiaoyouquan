@@ -22,10 +22,6 @@ public class ItemRenPin extends Item {
     public static final DamageSource DEATH_REN_PIN = new DamageSource("ren_pin").setDamageBypassesArmor();
 
     public ItemRenPin(){
-        String name = "ren_pin";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     Block[] givenBlocks = {

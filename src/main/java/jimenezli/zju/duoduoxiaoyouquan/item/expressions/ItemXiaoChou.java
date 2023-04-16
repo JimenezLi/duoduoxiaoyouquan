@@ -22,10 +22,6 @@ import java.util.Random;
 
 public class ItemXiaoChou extends Item {
     public ItemXiaoChou(){
-        String name = "xiao_chou";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     private final Random random = new Random();

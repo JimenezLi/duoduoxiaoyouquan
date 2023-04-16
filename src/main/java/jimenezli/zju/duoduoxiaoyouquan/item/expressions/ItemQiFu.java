@@ -21,11 +21,7 @@ import java.util.Objects;
 import java.util.Random;
 
 public class ItemQiFu extends Item {
-    private static final String name = "qi_fu";
     public ItemQiFu(){
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     private final Random random = new Random();

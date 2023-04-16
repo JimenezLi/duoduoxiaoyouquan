@@ -1,8 +1,7 @@
 package jimenezli.zju.duoduoxiaoyouquan.register;
 
-import jimenezli.zju.duoduoxiaoyouquan.item.ItemIronPlate;
-import jimenezli.zju.duoduoxiaoyouquan.item.ItemYunDuoDuo;
-import jimenezli.zju.duoduoxiaoyouquan.item.ItemYunDuoDuoCore;
+import jimenezli.zju.duoduoxiaoyouquan.Reference;
+import jimenezli.zju.duoduoxiaoyouquan.duoduoxiaoyouquan;
 import jimenezli.zju.duoduoxiaoyouquan.item.expressions.*;
 import jimenezli.zju.duoduoxiaoyouquan.item.hidden.ItemChargedXiaoKu;
 import net.minecraft.item.Item;
@@ -11,54 +10,53 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import java.util.ArrayList;
+import java.util.List;
 
 @Mod.EventBusSubscriber
 public class ItemsRegister {
     //Learnt from code of Twilight Forest
     public static Item.ToolMaterial DUODUOXIAOYOUQUAN_TU_XIE = EnumHelper.addToolMaterial("DUODUOXIAOYOUQUAN_TU_XIE", 0, 1, 1.0F, 1000.0F, 1);
 
+    public static final List<Item> EXPRESSION_LIST = new ArrayList<>();
+    public static final List<Item> ITEM_LIST = new ArrayList<>();
 
-    public static final ItemIronPlate ironPlate = new ItemIronPlate();
-    public static final ItemYunDuoDuo yunduoduo = new ItemYunDuoDuo();
-    public static final ItemYunDuoDuoCore yunduoduo_core = new ItemYunDuoDuoCore();
+    public static final Item ironPlate = buildItem(new Item(),"iron_plate");
+    public static final Item yunduoduo =buildItem(new Item(),"yunduoduo");
+    public static final Item yunduoduo_core =buildItem(new Item(),"yunduoduo_core");
 
-    public static final ItemBaiYan bai_yan = new ItemBaiYan();
-    public static final ItemChiGua chi_gua = new ItemChiGua(20, 1.0F, false);
-    public static final ItemCiYa ci_ya = new ItemCiYa();
-    public static final ItemDianZan dian_zan = new ItemDianZan();
-    public static final ItemFen fen = new ItemFen();
-    public static final ItemFenNu fen_nu = new ItemFenNu();
-    public static final ItemGanGa gan_ga = new ItemGanGa();
-    public static final ItemGouTou gou_tou = new ItemGouTou();
-    public static final ItemHeng heng = new ItemHeng();
-    public static final ItemHeKuoLuo he_kuo_luo = new ItemHeKuoLuo(6, 0.2F, false);
-    public static final ItemHuaJi hua_ji = new ItemHuaJi();
-    public static final ItemJiaYou jia_you = new ItemJiaYou();
-    public static final ItemJingDai jing_dai = new ItemJingDai();
-    public static final ItemKaiXin kai_xin = new ItemKaiXin();
-    public static final ItemKeLian ke_lian = new ItemKeLian();
-    public static final ItemMaLe ma_le = new ItemMaLe();
-    public static final ItemMeiYanKan mei_yan_kan = new ItemMeiYanKan();
-    public static final ItemMoTou mo_tou = new ItemMoTou();
-    public static final ItemQingZhu qing_zhu = new ItemQingZhu();
-    public static final ItemQinQin qin_qin = new ItemQinQin();
-    public static final ItemQiFu qi_fu = new ItemQiFu();
-    public static final ItemRenPin ren_pin = new ItemRenPin();
-    public static final ItemSanHua san_hua = new ItemSanHua();
-    public static final ItemShangXin shang_xin = new ItemShangXin();
-    public static final ItemTanQi tan_qi = new ItemTanQi();
-    public static final ItemTouTu tou_tu = new ItemTouTu();
-    public static final ItemTuiYanJing tui_yan_jing = new ItemTuiYanJing();
-    public static final ItemTuXie tu_xie = new ItemTuXie(DUODUOXIAOYOUQUAN_TU_XIE);
-    public static final ItemXiaoChou xiao_chou = new ItemXiaoChou();
-    public static final ItemXiaoKu xiao_ku = new ItemXiaoKu();
-    public static final ItemYiWen yi_wen = new ItemYiWen();
-
-    public static final ItemChargedXiaoKu charged_xiao_ku = new ItemChargedXiaoKu();
-
-    public static Item[] expressionList = {
-            bai_yan, chi_gua, ci_ya, dian_zan, fen, fen_nu, gan_ga, gou_tou, heng, he_kuo_luo, hua_ji, jia_you, jing_dai, kai_xin, ke_lian, ma_le, mei_yan_kan, mo_tou, qing_zhu, qin_qin, qi_fu, ren_pin, san_hua, shang_xin, tan_qi, tou_tu, tui_yan_jing, tu_xie, xiao_chou, xiao_ku, yi_wen
-    };
+    public static final Item bai_yan =buildExpression(new ItemBaiYan(),"bai_yan");
+    public static final Item chi_gua =buildExpression(new ItemChiGua(20,1.0F,false),"chi_gua");
+    public static final Item ci_ya =buildExpression(new ItemCiYa(),"ci_ya");
+    public static final Item dian_zan =buildExpression(new ItemDianZan(),"dian_zan");
+    public static final Item fen =buildExpression(new ItemFen(),"fen");
+    public static final Item fen_nu =buildExpression(new ItemFenNu(),"fen_nu");
+    public static final Item gan_ga =buildExpression(new ItemGanGa(),"gan_ga");
+    public static final Item gou_tou =buildExpression(new ItemGouTou(),"gou_tou");
+    public static final Item heng =buildExpression(new ItemHeng(),"heng");
+    public static final Item he_kuo_luo =buildExpression(new ItemHeKuoLuo(6,0.2F,false),  "he_kuo_luo");
+    public static final Item hua_ji =buildExpression(new ItemHuaJi(),"hua_ji");
+    public static final Item jia_you =buildExpression(new ItemJiaYou(),"jia_you");
+    public static final Item jing_dai =buildExpression(new ItemJingDai(),"jing_dai");
+    public static final Item kai_xin =buildExpression(new ItemKaiXin(),"kai_xin");
+    public static final Item ke_lian =buildExpression(new ItemKeLian(),"ke_lian");
+    public static final Item ma_le =buildExpression(new ItemMaLe(),"ma_le");
+    public static final Item mei_yan_kan =buildExpression(new ItemMeiYanKan(),"mei_yan_kan");
+    public static final Item mo_tou =buildExpression(new ItemMoTou(),"mo_tou");
+    public static final Item qing_zhu =buildExpression(new ItemQingZhu(),"qing_zhu");
+    public static final Item qin_qin =buildExpression(new ItemQinQin(),"qin_qin");
+    public static final Item qi_fu =buildExpression(new ItemQiFu(),"qi_fu");
+    public static final Item ren_pin =buildExpression(new ItemRenPin(),"ren_pin");
+    public static final Item san_hua =buildExpression(new ItemSanHua(),"san_hua");
+    public static final Item shang_xin =buildExpression(new ItemShangXin(),"shang_xin");
+    public static final Item tan_qi =buildExpression(new ItemTanQi(),"tan_qi");
+    public static final Item tou_tu =buildExpression(new ItemTouTu(),"tou_tu");
+    public static final Item tui_yan_jing =buildExpression(new ItemTuiYanJing(),"tui_yan_jing");
+    public static final Item tu_xie =buildExpression(new ItemTuXie(DUODUOXIAOYOUQUAN_TU_XIE),"tu_xie");
+    public static final Item xiao_chou =buildExpression(new ItemXiaoChou(),"xiao_chou");
+    public static final Item xiao_ku =buildExpression(new ItemXiaoKu(),"xiao_ku");
+    public static final Item yi_wen =buildExpression(new ItemYiWen(),"yi_wen");
+    public static final Item charged_xiao_ku =buildExpression(new ItemChargedXiaoKu(),"charged_xiao_ku");
 
     public ItemsRegister() {
         MinecraftForge.EVENT_BUS.register(this);
@@ -66,16 +64,21 @@ public class ItemsRegister {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(ironPlate);
-        event.getRegistry().register(yunduoduo_core);
-        event.getRegistry().register(yunduoduo);
-//        event.getRegistry().registerAll(
-//                bai_yan, chi_gua, ci_ya, dian_zan, fen, fen_nu, gan_ga, gou_tou, heng, he_kuo_luo, hua_ji, jia_you, jing_dai, kai_xin, ke_lian, ma_le, mei_yan_kan, mo_tou, qing_zhu, qin_qin, qi_fu, ren_pin, san_hua, shang_xin, tan_qi, tou_tu, tui_yan_jing, tu_xie, xiao_chou, xiao_ku, yi_wen
-//        );
-        for (Item expression: expressionList){
-            event.getRegistry().register(expression);
+        for (Item item: ITEM_LIST){
+            event.getRegistry().register(item);
         }
+    }
 
-        event.getRegistry().register(charged_xiao_ku);
+    private static Item buildItem(Item item, String name) {
+        item.setRegistryName(name);
+        item.setUnlocalizedName(Reference.MODID + "." + name);
+        item.setCreativeTab(duoduoxiaoyouquan.DUODUO);
+        ITEM_LIST.add(item);
+        return item;
+    }
+
+    private static Item buildExpression(Item item, String name) {
+        EXPRESSION_LIST.add(item);
+        return buildItem(item, name);
     }
 }

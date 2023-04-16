@@ -18,10 +18,6 @@ import java.util.Objects;
 
 public class ItemCiYa extends Item {
     public ItemCiYa(){
-        String name = "ci_ya";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     private static final double skeletonAngleAddition = Math.PI / 2.0;

@@ -21,10 +21,6 @@ import java.util.Objects;
 
 public class ItemBaiYan extends Item {
     public ItemBaiYan(){
-        String name = "bai_yan";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
         this.setMaxDamage(64);
         this.setMaxStackSize(1);
     }

@@ -19,10 +19,6 @@ import java.util.Random;
 
 public class ItemSanHua extends Item {
     public ItemSanHua(){
-        String name = "san_hua";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     private static final double angleAddition = Math.PI / 4.0;

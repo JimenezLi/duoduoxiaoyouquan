@@ -19,10 +19,6 @@ import java.util.Objects;
 
 public class ItemKaiXin extends Item {
     public ItemKaiXin(){
-        String name = "kai_xin";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

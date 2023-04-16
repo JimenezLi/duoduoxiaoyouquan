@@ -20,10 +20,6 @@ import java.util.Vector;
 
 public class ItemShangXin extends Item {
     public ItemShangXin(){
-        String name = "shang_xin";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

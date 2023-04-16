@@ -21,10 +21,6 @@ import java.util.Vector;
 
 public class ItemJiaYou extends Item {
     public ItemJiaYou(){
-        String name = "jia_you";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

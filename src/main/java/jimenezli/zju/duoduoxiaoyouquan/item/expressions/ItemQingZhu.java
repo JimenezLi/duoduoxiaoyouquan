@@ -20,10 +20,6 @@ import java.util.Objects;
 
 public class ItemQingZhu extends Item {
     public ItemQingZhu(){
-        String name = "qing_zhu";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     private static final double rocketAngleAddition = Math.PI / 12.0;

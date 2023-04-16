@@ -21,10 +21,6 @@ import java.util.Objects;
 
 public class ItemHuaJi extends Item {
     public ItemHuaJi(){
-        String name = "hua_ji";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

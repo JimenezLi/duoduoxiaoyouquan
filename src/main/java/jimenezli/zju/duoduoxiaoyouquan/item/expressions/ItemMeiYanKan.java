@@ -23,10 +23,6 @@ import java.util.Random;
 
 public class ItemMeiYanKan extends Item {
     public ItemMeiYanKan(){
-        String name = "mei_yan_kan";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
         this.setMaxStackSize(1);        //Do not cheat on your partner!
     }
 

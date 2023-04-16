@@ -21,10 +21,6 @@ import java.util.Objects;
 
 public class ItemMaLe extends Item {
     public ItemMaLe(){
-        String name = "ma_le";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

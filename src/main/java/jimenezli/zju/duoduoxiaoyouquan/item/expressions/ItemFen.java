@@ -18,10 +18,6 @@ import java.util.Objects;
 
 public class ItemFen extends Item {
     public ItemFen(){
-        String name = "fen";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

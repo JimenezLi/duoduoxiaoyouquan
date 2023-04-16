@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = "1.12.2")
+@Mod(modid = Reference.MODID, name = Reference.NAME, acceptedMinecraftVersions = "1.12.2")
 public class duoduoxiaoyouquan {
     @Mod.Instance(Reference.MODID)
     public static duoduoxiaoyouquan instance;

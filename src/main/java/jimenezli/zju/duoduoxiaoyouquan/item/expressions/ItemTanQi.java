@@ -20,10 +20,6 @@ import java.util.Objects;
 
 public class ItemTanQi extends Item {
     public ItemTanQi(){
-        String name = "tan_qi";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

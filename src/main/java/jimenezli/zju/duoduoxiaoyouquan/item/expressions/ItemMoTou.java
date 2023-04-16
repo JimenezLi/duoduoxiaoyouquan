@@ -20,10 +20,6 @@ import java.util.Objects;
 
 public class ItemMoTou extends Item {
     public ItemMoTou(){
-        String name = "mo_tou";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
     }
 
     @Nonnull

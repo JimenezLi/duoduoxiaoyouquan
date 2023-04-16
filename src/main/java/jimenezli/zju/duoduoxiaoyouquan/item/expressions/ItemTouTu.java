@@ -20,10 +20,6 @@ import java.util.Random;
 
 public class ItemTouTu extends Item {
     public ItemTouTu(){
-        String name = "tou_tu";
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
         this.setMaxStackSize(1);
         this.setMaxDamage(64);
     }

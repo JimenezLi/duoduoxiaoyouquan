@@ -19,11 +19,7 @@ import javax.annotation.Nonnull;
 import java.util.Objects;
 
 public class ItemFenNu extends Item {
-    private static final String name = "fen_nu";
     public ItemFenNu(){
-        this.setRegistryName(Reference.MODID + ":" + name);
-        this.setUnlocalizedName(Reference.MODID + "." + name);
-        this.setCreativeTab(duoduoxiaoyouquan.DUODUO);
         this.setMaxDamage(64);
         this.setMaxStackSize(1);
     }

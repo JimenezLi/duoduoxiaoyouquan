@@ -14,7 +14,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         new ItemsRegister();
         OreDictionary.registerOre("plateIron", ItemsRegister.ironPlate);
-        for (Item expression: ItemsRegister.expressionList){
+        for (Item expression: ItemsRegister.EXPRESSION_LIST){
             OreDictionary.registerOre("listAllExpression", expression);
         }
     }

@@ -14,15 +14,9 @@ public class ModelsRegister {
 
     @SubscribeEvent
     public void registerModels(ModelRegistryEvent event) {
-        registerModel(ItemsRegister.ironPlate);
-        registerModel(ItemsRegister.yunduoduo_core);
-        registerModel(ItemsRegister.yunduoduo);
-
-        for (Item item: ItemsRegister.expressionList) {
+        for (Item item: ItemsRegister.ITEM_LIST) {
             registerModel(item);
         }
-
-        registerModel(ItemsRegister.charged_xiao_ku);
     }
 
     private void registerModel(Item item) {
